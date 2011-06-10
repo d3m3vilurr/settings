@@ -1,0 +1,15 @@
+[user]
+	name = d3m3vilurr
+	email = d3m3vilurr@gmail.com
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	br = branch
+[core]
+	editor = vi
