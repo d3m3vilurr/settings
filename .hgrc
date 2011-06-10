@@ -1,0 +1,7 @@
+[ui]
+username = d3m3vilurr <d3m3vilurr@gmail.com>
+
+[extensions]
+hgext.bookmarks =
+hggit = 
+prompt = ~/.hg_extend/hg-prompt/prompt.py
