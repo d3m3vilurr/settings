@@ -2,6 +2,11 @@
 username = d3m3vilurr <d3m3vilurr@gmail.com>
 
 [extensions]
-hgext.bookmarks =
+color = 
 hggit = 
+transplant =
+rebase =
 prompt = ~/.hg_extend/hg-prompt/prompt.py
+histedit = ~/.hg_extend/hg-histedit/hg_histedit.py
+hgext.fetch =
+hgext.bookmarks =
