@@ -10,10 +10,10 @@ parse_branch ()
 {
    if git rev-parse --git-dir >/dev/null 2>&1
    then
-      branchname="(git:"$(branch_color)$(git branch 2>/dev/null| sed -n '/^\*/s/^\* //p')${c_sgr0}") "
+      branchname="\x20(git:"$(branch_color)$(git branch 2>/dev/null| sed -n '/^\*/s/^\* //p')${c_sgr0}") "
    elif hg prompt >/dev/null 2>&1
    then
-      branchname="(hg:"$(branch_color)$(hg prompt "{branch}" 2>/dev/null)${c_sgr0}") "
+      branchname="\x20(hg:"$(branch_color)$(hg prompt "{branch}" 2>/dev/null)${c_sgr0}") "
    else
       return 0
    fi
@@ -49,6 +49,6 @@ branch_color ()
    fi
    echo -ne $color
 }
- 
-export PS1='\u@\h\[${c_sgr0}\]:\W\[${c_sgr0}\] $(parse_branch)\$ '
+
+PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]$(parse_branch)\$ '
 
