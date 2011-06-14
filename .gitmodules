@@ -1,3 +1,6 @@
 [submodule "dircolors-solarized"]
 	path = dircolors-solarized
 	url = git://github.com/seebi/dircolors-solarized.git
+[submodule ".git_extend/git-flow"]
+	path = .git_extend/git-flow
+	url = https://github.com/nvie/gitflow.git
