@@ -3,7 +3,7 @@
 	url = git://github.com/seebi/dircolors-solarized.git
 [submodule ".git_extend/git-flow"]
 	path = .git_extend/git-flow
-	url = https://github.com/nvie/gitflow.git
+	url = git://github.com/nvie/gitflow.git
 [submodule ".bash_completion.d/git-flow-completion"]
 	path = .bash_completion.d/git-flow-completion
-	url = https://github.com/jasherai/git-flow-completion.git
+	url = git://github.com/jasherai/git-flow-completion.git
