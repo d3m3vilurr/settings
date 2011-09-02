@@ -6,4 +6,4 @@
 	url = git://github.com/nvie/gitflow.git
 [submodule ".bash_completion.d/git-flow-completion"]
 	path = .bash_completion.d/git-flow-completion
-	url = git://github.com/jasherai/git-flow-completion.git
+    url = git://github.com/bobthecow/git-flow-completion.git
