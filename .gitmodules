@@ -7,6 +7,6 @@
 [submodule ".bash_completion.d/git-flow-completion"]
 	path = .bash_completion.d/git-flow-completion
     url = git://github.com/bobthecow/git-flow-completion.git
-[submodule "vimrc"]
-	path = vimrc
+[submodule ".vim"]
+	path = .vim
 	url = git://github.com/d3m3vilurr/vimrc.git
