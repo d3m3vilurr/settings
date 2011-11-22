@@ -29,6 +29,7 @@ alias lal='ll'
 
 # local alias
 alias suod='sudo'
+alias tmux='tmux -2'
 alias screen='tmux'
 alias gt="git"
 alias gi="git"
