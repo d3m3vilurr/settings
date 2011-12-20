@@ -33,3 +33,7 @@ alias tmux='tmux -2'
 alias screen='tmux'
 alias gt="git"
 alias gi="git"
+
+# terminal locale
+alias sshkr='luit -encoding eucKR +osl -- ssh'
+alias telnetkr='luit -encoding eucKR +osl -- telnet'
