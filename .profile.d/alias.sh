@@ -37,3 +37,6 @@ alias gi="git"
 # terminal locale
 alias sshkr='luit -encoding eucKR +osl -- ssh'
 alias telnetkr='luit -encoding eucKR +osl -- telnet'
+
+# npm settings
+alias npm-g='npm -g'
