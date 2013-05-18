@@ -1,11 +1,9 @@
-#!/usr/bin/env bash
-
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]
     function ls; /usr/bin/env ls --color=auto $argv; end
-    function grep; /usr/bin/env grep $OPTS; end
-    function fgrep; /usr/bin/env fgrep $OPTS; end
-    function egrep; /usr/bin/env egrep $OPTS; end
+    function grep; /usr/bin/env grep --color=auto $argv; end
+    function fgrep; /usr/bin/env fgrep --color=auto $argv; end
+    function egrep; /usr/bin/env egrep --color=auto $argv; end
 end
 
 # some more ls aliases
