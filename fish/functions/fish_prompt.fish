@@ -85,6 +85,10 @@ function fish_prompt
 
     echo
 
-    printf '↪ '
+    switch $USER
+        case root; printf '# '
+        case '*'; printf '↪ '
+    end
+
     set_color normal
 end

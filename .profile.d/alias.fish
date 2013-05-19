@@ -14,15 +14,15 @@ function lal; ll $argv; end
 
 
 # local alias
-function suod; /usr/bin/env sudo; end
-function tmux; /usr/bin/env tmux -2; end
-function screen; /usr/bin/env tmux -2; end
-function gt; /usr/bin/env git; end
-function gi; /usr/bin/env git; end
+function suod; /usr/bin/env sudo $argv; end
+function tmux; /usr/bin/env tmux -2 $argv; end
+function screen; /usr/bin/env tmux -2 $argv; end
+function gt; /usr/bin/env git $argv; end
+function gi; /usr/bin/env git $argv; end
 
 # terminal locale
-function sshkr; luit -encoding eucKR +osl -- ssh; end
-function telnetkr; luit -encoding eucKR +osl -- telnet; end
+function sshkr; luit -encoding eucKR +osl -- ssh $argv; end
+function telnetkr; luit -encoding eucKR +osl -- telnet $argv; end
 
 # mosh with X forward
-function moshx; mosh --ssh="ssh -X"; end
+function moshx; mosh --ssh="ssh -X" $argv; end
