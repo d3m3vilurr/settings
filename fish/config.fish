@@ -7,3 +7,4 @@ for path in "$HOME/.profile.d" "$HOME/.config/fish/profile.d"
         end
     end
 end
+test -s /home/d3m3vilurr/.nvm/nvm.fish; and . /home/d3m3vilurr/.nvm/nvm.fish  # This loads NVM
