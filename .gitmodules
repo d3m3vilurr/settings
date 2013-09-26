@@ -10,3 +10,6 @@
 [submodule ".vim"]
 	path = .vim
 	url = git://github.com/d3m3vilurr/vimrc.git
+[submodule "git-meld"]
+	path = git-meld
+	url = git://github.com/wmanley/git-meld.git
