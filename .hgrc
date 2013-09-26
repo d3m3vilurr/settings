@@ -3,7 +3,7 @@ username = d3m3vilurr <d3m3vilurr@gmail.com>
 
 [extensions]
 color = 
-hggit = 
+#hggit = 
 transplant =
 rebase =
 prompt = ~/.hg_extend/hg-prompt/prompt.py

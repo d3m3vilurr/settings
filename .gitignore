@@ -1,2 +1,4 @@
 [glob]
 *.pyc
+fishd.*
+fish_history
