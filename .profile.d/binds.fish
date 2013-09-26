@@ -14,4 +14,7 @@ function fish_user_key_bindings
     bind \e1 .runsudo
     # `alt-2` auto reinput prev command
     bind \e2 .!!
+
+    bind \e\[1~ beginning-of-line
+    bind \e\[4~ end-of-line
 end
