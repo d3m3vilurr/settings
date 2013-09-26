@@ -12,6 +12,9 @@ function la;  ls -A $argv; end
 function l;   ls -CF $argv; end
 function lal; ll $argv; end
 
+# use tab mode vim always
+function vim; /usr/bin/env vim -p $argv; end
+alias vi vim
 
 # local alias
 function suod; /usr/bin/env sudo $argv; end
