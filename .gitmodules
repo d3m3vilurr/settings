@@ -10,3 +10,9 @@
 [submodule ".vim"]
 	path = .vim
 	url = git://github.com/d3m3vilurr/vimrc.git
+[submodule "fish/virtualfish"]
+	path = fish/virtualfish
+	url = git://github.com/adambrenecki/virtualfish.git
+[submodule ".git_extend/git-meld"]
+	path = .git_extend/git-meld
+	url = git://github.com/wmanley/git-meld.git
