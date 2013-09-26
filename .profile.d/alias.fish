@@ -19,6 +19,7 @@ function tmux; /usr/bin/env tmux -2 $argv; end
 function screen; /usr/bin/env tmux -2 $argv; end
 function gt; /usr/bin/env git $argv; end
 function gi; /usr/bin/env git $argv; end
+alias cp gcp
 
 # terminal locale
 function sshkr; luit -encoding eucKR +osl -- ssh $argv; end

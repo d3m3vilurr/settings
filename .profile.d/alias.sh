@@ -33,6 +33,7 @@ alias tmux='tmux -2'
 alias screen='tmux'
 alias gt="git"
 alias gi="git"
+alias cp="gcp"
 
 # terminal locale
 alias sshkr='luit -encoding eucKR +osl -- ssh'
