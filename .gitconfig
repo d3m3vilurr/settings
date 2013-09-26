@@ -11,5 +11,11 @@
 	ci = commit
 	co = checkout
 	br = branch
+	cp = cherry-pick
+	lg = "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+	p4 = ~/bin/p4
+	p4pull = p4 rebase
+	p4push = p4 submit
+	meld = "difftool -t meld -y"
 [core]
 	editor = vi

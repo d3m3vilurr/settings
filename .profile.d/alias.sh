@@ -27,6 +27,10 @@ alias la='ls -A'
 alias l='ls -CF'
 alias lal='ll'
 
+# use tab mode vim always
+alias vim='vim -p'
+alias vi='vim'
+
 # local alias
 alias suod='sudo'
 alias tmux='tmux -2'
@@ -41,3 +45,6 @@ alias telnetkr='luit -encoding eucKR +osl -- telnet'
 
 # npm settings
 alias npm-g='npm -g'
+
+# json parser
+alias json='python -mjson.tool'
