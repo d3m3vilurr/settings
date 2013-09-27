@@ -22,7 +22,11 @@ function tmux; /usr/bin/env tmux -2 $argv; end
 function screen; /usr/bin/env tmux -2 $argv; end
 function gt; /usr/bin/env git $argv; end
 function gi; /usr/bin/env git $argv; end
-alias cp gcp
+if type -f gcp > /dev/null
+    if set -q DBUS_SESSION_BUS_ADDRESS
+        alias cp gcp
+    end
+end
 
 # terminal locale
 function sshkr; luit -encoding eucKR +osl -- ssh $argv; end
