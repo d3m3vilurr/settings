@@ -87,7 +87,7 @@ function fish_prompt
 
     switch $USER
         case root; printf '# '
-        case '*'; printf '↪ '
+        case '*'; printf '> '
     end
 
     set_color normal
