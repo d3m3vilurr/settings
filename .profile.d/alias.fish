@@ -27,6 +27,9 @@ if type -f gcp > /dev/null
         alias cp gcp
     end
 end
+function time
+	/usr/bin/env time -f "\t%e real\t%U user\t%S sys\t%P CPU\t%x status" $argv
+end
 
 # terminal locale
 function sshkr; luit -encoding eucKR +osl -- ssh $argv; end
