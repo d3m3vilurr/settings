@@ -16,3 +16,6 @@
 [submodule ".git_extend/git-meld"]
 	path = .git_extend/git-meld
 	url = git://github.com/wmanley/git-meld.git
+[submodule ".git_extend/git-hg"]
+	path = .git_extend/git-hg
+	url = git://github.com/cosmin/git-hg.git
