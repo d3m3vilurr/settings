@@ -31,6 +31,10 @@ function time
 	/usr/bin/env time -f "\t%e real\t%U user\t%S sys\t%P CPU\t%x status" $argv
 end
 
+function json
+    /usr/bin/env python -m json.tool $argv
+end
+
 # terminal locale
 function sshkr; luit -encoding eucKR +osl -- ssh $argv; end
 function telnetkr; luit -encoding eucKR +osl -- telnet $argv; end
