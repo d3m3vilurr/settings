@@ -35,6 +35,10 @@ function json
     /usr/bin/env python -m json.tool $argv
 end
 
+if type -f $HOME/.local/bin/hub > /dev/null
+    alias git hub
+end
+
 # terminal locale
 function sshkr; luit -encoding eucKR +osl -- ssh $argv; end
 function telnetkr; luit -encoding eucKR +osl -- telnet $argv; end
