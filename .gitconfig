@@ -19,3 +19,5 @@
 	meld = "difftool -t meld -y"
 [core]
 	editor = vi
+[github]
+	user = d3m3vilurr
