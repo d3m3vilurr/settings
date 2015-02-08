@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+ENABLED=$(sh -c 'LANG="C" nmcli nm status'|awk -F " " '{print $4}'|tail -n 1)
+
+if [[ $ENABLED == "enabled" ]]; then
+    nmcli nm wifi off
+else
+    nmcli nm wifi on
+fi
