@@ -22,3 +22,12 @@
 [submodule ".tmux/plugins/tpm"]
 	path = .tmux/plugins/tpm
 	url = git://github.com/tmux-plugins/tpm.git
+[submodule "guake-colors-solarized"]
+	path = guake-colors-solarized
+	url = git://github.com/coolwanglu/guake-colors-solarized
+[submodule "gnome-terminal-colors-solarized"]
+	path = gnome-terminal-colors-solarized
+	url = git://github.com/Anthony25/gnome-terminal-colors-solarized
+[submodule "nvm-fish-wrapper"]
+	path = nvm-fish-wrapper
+	url = git://github.com/passcod/nvm-fish-wrapper
