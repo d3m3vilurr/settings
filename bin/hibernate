@@ -1,2 +1,4 @@
 #!/usr/bin/env bash
-pkexec /usr/sbin/hibernate
+lxlock
+dbus-send --system --print-reply --dest="org.freedesktop.UPower" /org/freedesktop/UPower org.freedesktop.UPower.Suspend
+
