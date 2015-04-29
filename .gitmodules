@@ -19,3 +19,6 @@
 [submodule ".git_extend/git-hg"]
 	path = .git_extend/git-hg
 	url = git://github.com/cosmin/git-hg.git
+[submodule ".tmux/plugins/tpm"]
+	path = .tmux/plugins/tpm
+	url = git://github.com/tmux-plugins/tpm.git
