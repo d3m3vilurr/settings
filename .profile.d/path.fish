@@ -8,3 +8,5 @@ end
 
 prepend_to_path $HOME/.local/bin
 prepend_to_path ~/bin
+prepend_to_path /opt/wine-compholio/bin
+prepend_to_path ~/.cargo/bin
