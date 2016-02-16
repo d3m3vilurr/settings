@@ -22,7 +22,7 @@ function tmux; /usr/bin/env tmux -2 $argv; end
 function screen; /usr/bin/env tmux -2 $argv; end
 function gt; /usr/bin/env git $argv; end
 function gi; /usr/bin/env git $argv; end
-if type -f gcp > /dev/null
+if type -fq gcp
     if set -q DBUS_SESSION_BUS_ADDRESS
         alias cp gcp
     end
@@ -35,7 +35,7 @@ function json
     /usr/bin/env python -m json.tool $argv
 end
 
-if type -f $HOME/.local/bin/hub > /dev/null
+if type -fq $HOME/.local/bin/hub
     alias git hub
 end
 
