@@ -27,9 +27,9 @@ branch_color ()
       color=""
       if git diff --quiet 2>/dev/null >&2
       then
-         gitstatus=$(git status 2>/dev/null| tail -n1)
+         gitstatus=$(git status --short 2>/dev/null| tail -n1| wc -l)
          case "$gitstatus" in
-            "nothing to commit (working directory clean)" ) color=${c_green};;
+            "0" ) color=${c_green};;
             * ) color=${c_pink};;
          esac
       else

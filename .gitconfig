@@ -19,5 +19,7 @@
 	meld = "difftool -t meld -y"
 [core]
 	editor = vi
+[diff]
+	compactionHeuristic = true
 [github]
 	user = d3m3vilurr

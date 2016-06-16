@@ -1,7 +1,7 @@
 function git_branch_color
     if git diff --quiet 2>/dev/null >&2
-        switch (git status 2>/dev/null| tail -n1)
-            case "nothing to commit, working directory clean"
+        switch (git status --short 2>/dev/null| tail -n1 | wc -l)
+            case "0"
                 set_color green
             case "*"
                 set_color magenta
