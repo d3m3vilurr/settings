@@ -45,3 +45,6 @@ function telnetkr; luit -encoding eucKR +osl -- telnet $argv; end
 
 # mosh with X forward
 function moshx; mosh --ssh="ssh -X" $argv; end
+
+# babel-mocha
+function babel-mocha; mocha --compilers js:babel-core/register -t 10000 $argv; end
