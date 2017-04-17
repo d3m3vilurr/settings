@@ -45,3 +45,7 @@ function telnetkr; luit -encoding eucKR +osl -- telnet $argv; end
 
 # mosh with X forward
 function moshx; mosh --ssh="ssh -X" $argv; end
+
+# pbcopy and pbpaste
+function pbcopy; xsel --clipboard --input $argv; end
+function pbpaste; xsel --clipboard --output $argv; end
