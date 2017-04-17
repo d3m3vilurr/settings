@@ -7,10 +7,20 @@ function prepend_to_path -d "Prepend the given dir to PATH if it exists and is n
 end
 
 prepend_to_path $HOME/.local/bin
-prepend_to_path ~/bin
+prepend_to_path $HOME/bin
 prepend_to_path /opt/wine-compholio/bin
-prepend_to_path ~/.cargo/bin
+prepend_to_path $HOME/.cargo/bin
+prepend_to_path $HOME/.gem/ruby/2.3.0/bin
 
 if [ $DEVKITARM ]
     prepend_to_path "$DEVKITARM/bin"
+end
+
+if [ $DEVKITMIPS ]
+    prepend_to_path "$DEVKITMIPS/bin"
+end
+
+if [ $VITASDK ]
+    prepend_to_path "$VITASDK/bin"
+    prepend_to_path "$VITASDK/usr/sbin"
 end
