@@ -9,7 +9,6 @@ end
 prepend_to_path $HOME/.local/bin
 prepend_to_path $HOME/bin
 prepend_to_path /opt/wine-compholio/bin
-prepend_to_path $HOME/.cargo/bin
 prepend_to_path $HOME/.gem/ruby/2.3.0/bin
 
 if [ $DEVKITARM ]
@@ -23,4 +22,8 @@ end
 if [ $VITASDK ]
     prepend_to_path "$VITASDK/bin"
     prepend_to_path "$VITASDK/usr/sbin"
+end
+
+if [ $ANDROID_NDK ]
+    prepend_to_path "$ANDROID_NDK/build"
 end
