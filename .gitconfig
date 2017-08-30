@@ -17,6 +17,7 @@
 	p4pull = p4 rebase
 	p4push = p4 submit
 	meld = "difftool -t meld -y"
+	meldall = "!cd $(git rev-parse --show-toplevel) && git meld"
 [core]
 	editor = vi
 [diff]
