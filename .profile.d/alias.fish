@@ -48,3 +48,10 @@ function moshx; mosh --ssh="ssh -X" $argv; end
 
 # babel-mocha
 function babel-mocha; mocha --compilers js:babel-core/register -t 10000 $argv; end
+
+# pbcopy and pbpaste
+function pbcopy; xsel --clipboard --input $argv; end
+function pbpaste; xsel --clipboard --output $argv; end
+
+# ssh socks5 proxy; -D port host
+function ssh-proxy; ssh -C2qTnN $argv; end
