@@ -41,7 +41,7 @@ function is_hg_repo
     end
     return 1
 end
-         
+
 function print_branch
     set_color normal
 
@@ -60,7 +60,7 @@ function print_branch
         printf ") "
     end
 end
- 
+
 function fish_prompt
 	set_color yellow
     printf '%s' (whoami)
