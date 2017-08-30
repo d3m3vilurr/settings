@@ -24,3 +24,5 @@
 	compactionHeuristic = true
 [github]
 	user = d3m3vilurr
+[review "review.lineageos.org"]
+	username = d3m3vilurr
