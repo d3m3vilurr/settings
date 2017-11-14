@@ -10,6 +10,7 @@ prepend_to_path $HOME/.local/bin
 prepend_to_path $HOME/bin
 prepend_to_path /opt/wine-compholio/bin
 prepend_to_path $HOME/.gem/ruby/2.3.0/bin
+prepend_to_path $HOME/.cargo/bin
 
 if [ $DEVKITARM ]
     prepend_to_path "$DEVKITARM/bin"
