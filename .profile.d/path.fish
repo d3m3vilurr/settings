@@ -15,6 +15,10 @@ if [ $DEVKITARM ]
     prepend_to_path "$DEVKITARM/bin"
 end
 
+if [ $DEVKITA64 ]
+    prepend_to_path "$DEVKITA64/bin"
+end
+
 if [ $DEVKITMIPS ]
     prepend_to_path "$DEVKITMIPS/bin"
 end
