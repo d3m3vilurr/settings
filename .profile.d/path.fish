@@ -40,3 +40,11 @@ end
 if [ $ANDROID_NDK ]
     prepend_to_path "$ANDROID_NDK/build"
 end
+
+if test -d $HOME/opt/radare2/bin
+    prepend_to_path "$HOME/opt/radare2/bin"
+end
+
+if test -d $HOME/opt/radare2/lib
+    prepend_to_ld_lib_path "$HOME/opt/radare2/lib"
+end
