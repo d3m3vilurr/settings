@@ -6,6 +6,14 @@ function prepend_to_path -d "Prepend the given dir to PATH if it exists and is n
     end
 end
 
+function prepend_to_ld_lib_path -d "Prepend the given dir to PATH if it exists and is not already in it"
+    if test -d $argv[1]
+        if not contains $argv[1] $LD_LIBRARY_PATH
+            set -gx LD_LIBRARY_PATH "$argv[1]" $LD_LIBRARY_PATH
+        end
+    end
+end
+
 prepend_to_path $HOME/.local/bin
 prepend_to_path $HOME/bin
 prepend_to_path /opt/wine-compholio/bin
