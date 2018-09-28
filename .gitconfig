@@ -16,12 +16,19 @@
 	p4 = ~/bin/p4
 	p4pull = p4 rebase
 	p4push = p4 submit
-	meld = "difftool -t meld -y"
-	meldall = "!cd $(git rev-parse --show-toplevel) && git meld"
+	gdiff = "difftool -g -y -d"
+	meld = "difftool -g -y -d"
+	gmerge = "mergetool -t meld -y"
 [core]
 	editor = vi
 [diff]
 	compactionHeuristic = true
+	guitool = meld
+[difftool "meld"]
+	cmd = meld "$LOCAL" "$REMOTE"
+[mergetool "meld"]
+	cmd = meld "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"
+	#cmd = meld "$LOCAL" "$BASE" "$REMOTE" --output "$MERGED"
 [github]
 	user = d3m3vilurr
 [review "review.lineageos.org"]
