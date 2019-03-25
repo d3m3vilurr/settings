@@ -1,6 +1,9 @@
 [user]
 	name = Sunguk Lee
 	email = d3m3vilurr@gmail.com
+	signingkey = 307AC36D35FE50E5
+[commit]
+	gpgsign = true
 [color]
 	diff = auto
 	status = auto
