@@ -33,9 +33,17 @@ format = "{1m}"
 block = "net"
 device = "wlp0s20f3"
 ssid = true
-ip = false
-graph_up = false
-graph_down = false
+hide_inactive = true
+hide_missing = true
+
+[[block]]
+block = "net"
+device = "tinc0"
+ip = true
+speed_up = false
+speed_down = false
+hide_inactive = true
+hide_missing = true
 
 [[block]]
 block = "sound"
