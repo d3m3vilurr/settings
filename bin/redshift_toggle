@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+IS_RUN=$(ps aux|grep "redshift -l"|grep -v grep|wc -l)
+if [[ $IS_RUN -eq 0 ]]; then
+    swaymsg exec "redshift -l37.57:127.00"
+else
+    killall redshift
+fi
