@@ -52,3 +52,9 @@ function pbpaste; xsel --clipboard --output $argv; end
 
 # ssh socks5 proxy; -D port host
 function ssh-proxy; ssh -C2qTnN $argv; end
+
+# insync file manage
+function insync-manage; insync manage_selective_sync $argv; end
+
+# shortcut yay
+function yy; /usr/bin/yay $argv; end
