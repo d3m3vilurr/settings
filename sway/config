@@ -57,6 +57,7 @@ exec swayidle -w \
          before-sleep 'swaylock-blur'
 
 ### autostart
+exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec mako
 #exec ibus-daemon
 exec uim-toolbar-gtk
