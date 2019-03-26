@@ -87,6 +87,7 @@ input "1226:160:04CA00A0:00_04CA:00A0_Touchpad" {
     dwt enabled
     tap enabled
     events disabled_on_external_mouse
+    pointer_accel 0.2
 }
 
 ### Key bindings
