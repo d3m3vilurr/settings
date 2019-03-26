@@ -25,13 +25,14 @@ alert = 10.0
 [[block]]
 block = "cpu"
 frequency = true
-#interval = 1
 
+[[block]]
+block = "temperature"
 
 [[block]]
 block = "memory"
 display_type = "memory"
-format_mem = "{MUg}GB/{MTg}GB({MUp}%)"
+format_mem = "{Mug}GB/{MTg}GB({MUp}%)"
 clickable = false
 
 [[block]]
