@@ -7,27 +7,32 @@ block = "backlight"
 [[block]]
 block = "disk_space"
 path = "/"
-alias = "/"
-info_type = "available"
-unit = "GB"
+alias = "SDA"
+unit = "GiB"
 interval = 20
 warning = 20.0
 alert = 10.0
 
 [[block]]
-block = "memory"
-display_type = "memory"
-format_mem = "{Mup}%"
-format_swap = "{SUp}%"
+block = "disk_space"
+path = "/storage"
+alias = "SDB"
+unit = "GiB"
+interval = 20
+warning = 20.0
+alert = 10.0
 
 [[block]]
 block = "cpu"
-interval = 1
+frequency = true
+#interval = 1
+
 
 [[block]]
-block = "load"
-interval = 1
-format = "{1m}"
+block = "memory"
+display_type = "memory"
+format_mem = "{MUg}GB/{MTg}GB({MUp}%)"
+clickable = false
 
 [[block]]
 block = "net"
@@ -39,9 +44,8 @@ hide_missing = true
 [[block]]
 block = "net"
 device = "tinc0"
-ip = true
+ip = false
 speed_up = false
-speed_down = false
 hide_inactive = true
 hide_missing = true
 
