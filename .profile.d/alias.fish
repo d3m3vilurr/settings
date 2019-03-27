@@ -47,8 +47,21 @@ function telnetkr; luit -encoding eucKR +osl -- telnet $argv; end
 function moshx; mosh --ssh="ssh -X" $argv; end
 
 # pbcopy and pbpaste
-function pbcopy; xsel --clipboard --input $argv; end
-function pbpaste; xsel --clipboard --output $argv; end
+function pbcopy
+    if set -q WAYLAND_DISPLAY
+        wl-copy
+    else
+        xsel --clipboard --input $argv
+    end
+end
+
+function pbpaste
+    if set -q WAYLAND_DISPLAY
+        wl-paste
+    else
+        xsel --clipboard --output $argv
+    end
+end
 
 # ssh socks5 proxy; -D port host
 function ssh-proxy; ssh -C2qTnN $argv; end
