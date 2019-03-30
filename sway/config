@@ -63,7 +63,7 @@ exec mako --default-timeout 10000
 exec uim-toolbar-gtk
 exec insync start
 exec redshift -l"37.57:127.00"
-exec ~/bin/change_wallpaper.sh
+exec ~/.config/gallery-dl/change_wallpaper
 
 #exec swaymsg inhibit_idle fullscreen
 
