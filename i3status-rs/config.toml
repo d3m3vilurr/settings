@@ -65,3 +65,4 @@ device = "CMB0"
 block = "time"
 interval = 60
 format = "%Y/%m/%d %a %R"
+on_click = "orage"
