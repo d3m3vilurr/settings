@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+ROOT_DIR=~/Pictures/grim
+FILENAME=$(date +'%Y-%m-%d-%H:%M:%S_grim.png')
+IMG_DIR=${ROOT_DIR}/${FILENAME:0:7}
+
+mkdir -p ${IMG_DIR}
+echo ${IMG_DIR}/${FILENAME}
