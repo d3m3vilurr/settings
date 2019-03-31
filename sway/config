@@ -65,7 +65,9 @@ exec insync start
 exec redshift -l"37.57:127.00"
 exec ~/.config/gallery-dl/change_wallpaper
 
-#exec swaymsg inhibit_idle fullscreen
+### inhibit_idle settings
+for_window [class="Firefox"] inhibit_idle fullscreen
+for_window [app_id="firefox"] inhibit_idle fullscreen
 
 ### Input configuration
 #
