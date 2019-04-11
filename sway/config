@@ -20,6 +20,7 @@ set $term termite
 # Note: it's recommended that you pass the final command to sway
 #set $menu dmenu_path | bemenu | xargs swaymsg exec --
 set $menu dmenu_path | rofi -show run | xargs swaymsg exec --
+set $menu2 dmenu_path | rofi -show drun | xargs swaymsg exec --
 # window gaps
 smart_gaps on
 gaps inner 10
@@ -58,7 +59,7 @@ exec swayidle -w \
 
 ### autostart
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec mako --default-timeout 10000
+exec mako --default-timeout 10000 --output eDP-1
 #exec ibus-daemon
 exec uim-toolbar-gtk
 exec insync start
@@ -120,6 +121,7 @@ input "1226:160:04CA00A0:00_04CA:00A0_Touchpad" {
     # start your launcher
     bindsym $mod+F2 exec $menu
     bindsym Control+e exec $menu
+    bindsym $mod+Control+e exec $menu2
 
     # pseudo pause redshift
     bindsym $mod+$sup+l exec redshift_toggle
