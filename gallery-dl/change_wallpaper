@@ -1,4 +1,20 @@
 #!/usr/bin/env bash
+PID_FILE=~/Pictures/gallery-dl.pid
+
+# race?
+if [ -f ${PID_FILE} ];
+then
+    OLD_PID=$(cat ${PID_FILE})
+    ALIVE=$(ps aux | grep ${OLD_PID} | grep change_wallpaper | wc -l)
+    rm $PID_FILE
+    echo ${ALIVE}
+    if [[ ${ALIVE} -ne "0" ]];
+    then
+        kill ${OLD_PID}
+    fi
+fi
+echo ${BASHPID} > ${PID_FILE}
+
 while true;
 do
     FILE=$(find ~/Pictures/gallery-dl|grep -e "\(jpg\|png\)\$"|shuf|head -n 1)
