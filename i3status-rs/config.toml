@@ -7,7 +7,7 @@ block = "backlight"
 [[block]]
 block = "disk_space"
 path = "/"
-alias = "SDA"
+alias = "NVME0"
 unit = "GiB"
 interval = 20
 warning = 20.0
@@ -16,7 +16,7 @@ alert = 10.0
 [[block]]
 block = "disk_space"
 path = "/storage"
-alias = "SDB"
+alias = "SDA"
 unit = "GiB"
 interval = 20
 warning = 20.0
