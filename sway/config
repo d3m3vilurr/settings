@@ -180,6 +180,8 @@ input "1226:160:04CA00A0:00_04CA:00A0_Touchpad" {
     bindsym $mod+Control+8 workspace 8
     bindsym $mod+Control+9 workspace 9
     bindsym $mod+Control+0 workspace 10
+    bindsym $mod+Control+Left workspace prev
+    bindsym $mod+Control+Right workspace next
     # move focused container to workspace
     bindsym $mod+Control+Shift+1 move container to workspace 1
     bindsym $mod+Control+Shift+2 move container to workspace 2
