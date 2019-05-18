@@ -17,7 +17,8 @@ function vim; /usr/bin/env vim -p $argv; end
 alias vi vim
 
 # local alias
-function suod; /usr/bin/env sudo $argv; end
+function sudo; /usr/bin/env sudo -E $argv; end
+function suod; /usr/bin/env sudo -E $argv; end
 function tmux; /usr/bin/env tmux -2 $argv; end
 function screen; /usr/bin/env tmux -2 $argv; end
 function gt; /usr/bin/env git $argv; end
