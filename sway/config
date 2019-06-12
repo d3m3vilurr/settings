@@ -93,7 +93,7 @@ input "1:1:AT_Translated_Set_2_keyboard" {
 input "1226:160:04CA00A0:00_04CA:00A0_Touchpad" {
     dwt enabled
     tap enabled
-    events disabled_on_external_mouse
+    events enabled
     pointer_accel 0.2
 }
 
@@ -111,6 +111,8 @@ input "1226:160:04CA00A0:00_04CA:00A0_Touchpad" {
     bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
     bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
     bindsym XF86MonBrightnessUp exec brightnessctl set +5%
+    # FN+F5 in LG Gram
+    bindcode Control+$sup+93 input "1226:160:04CA00A0:00_04CA:00A0_Touchpad" events toggle enabled disabled
 
     # screenshot
     bindsym Print exec grim -t png $(~/.config/sway/grim_file_path)
