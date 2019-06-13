@@ -113,7 +113,7 @@ input "1226:160:04CA00A0:00_04CA:00A0_Touchpad" {
     bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
     bindsym XF86MonBrightnessUp exec brightnessctl set +5%
     # FN+F5 in LG Gram
-    bindcode Control+$sup+93 input "1226:160:04CA00A0:00_04CA:00A0_Touchpad" events toggle enabled disabled
+    bindcode Control+$sup+93 exec python ~/.config/sway/toggle-gram-touchpad.py
 
     # screenshot
     bindsym Print exec grim -t png $(~/.config/sway/grim_file_path)
