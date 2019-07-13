@@ -98,6 +98,10 @@ input "1226:160:04CA00A0:00_04CA:00A0_Touchpad" {
     pointer_accel 0.2
 }
 
+input "1133:45089:Logitech_Pebble_Mouse" {
+    scroll_factor 1.5
+}
+
 ### Key bindings
 #
 # Basics:
