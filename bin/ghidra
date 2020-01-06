@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+if [ ! -z ${WAYLAND_DISPLAY} ]; then
+    export _JAVA_AWT_WM_NONREPARENTING=1
+fi
+
+/usr/bin/ghidra

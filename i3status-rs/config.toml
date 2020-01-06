@@ -1,0 +1,68 @@
+theme = "solarized-dark"
+icons = "awesome"
+
+[[block]]
+block = "backlight"
+
+[[block]]
+block = "disk_space"
+path = "/"
+alias = "NVME0"
+unit = "GiB"
+interval = 20
+warning = 20.0
+alert = 10.0
+
+[[block]]
+block = "disk_space"
+path = "/storage"
+alias = "SDA"
+unit = "GiB"
+interval = 20
+warning = 20.0
+alert = 10.0
+
+[[block]]
+block = "cpu"
+frequency = true
+
+[[block]]
+block = "temperature"
+
+[[block]]
+block = "memory"
+display_type = "memory"
+format_mem = "{Mug}GB/{MTg}GB({Mup}%)"
+clickable = false
+
+[[block]]
+block = "net"
+device = "wlp0s20f3"
+ssid = true
+bitrate = true
+hide_inactive = true
+hide_missing = true
+
+[[block]]
+block = "net"
+device = "tinc0"
+ip = false
+speed_up = false
+speed_down = false
+graph_down = true
+hide_inactive = true
+hide_missing = true
+
+[[block]]
+block = "sound"
+
+[[block]]
+block = "battery"
+show = "both"
+device = "CMB0"
+
+[[block]]
+block = "time"
+interval = 60
+format = "%Y/%m/%d %a %R"
+on_click = "orage"

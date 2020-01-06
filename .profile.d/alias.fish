@@ -17,7 +17,8 @@ function vim; /usr/bin/env vim -p $argv; end
 alias vi vim
 
 # local alias
-function suod; /usr/bin/env sudo $argv; end
+function sudo; /usr/bin/env sudo -E $argv; end
+function suod; /usr/bin/env sudo -E $argv; end
 function tmux; /usr/bin/env tmux -2 $argv; end
 function screen; /usr/bin/env tmux -2 $argv; end
 function gt; /usr/bin/env git $argv; end
@@ -50,8 +51,27 @@ function moshx; mosh --ssh="ssh -X" $argv; end
 function babel-mocha; mocha --compilers js:babel-core/register -t 10000 $argv; end
 
 # pbcopy and pbpaste
-function pbcopy; xsel --clipboard --input $argv; end
-function pbpaste; xsel --clipboard --output $argv; end
+function pbcopy
+    if set -q WAYLAND_DISPLAY
+        wl-copy
+    else
+        xsel --clipboard --input $argv
+    end
+end
+
+function pbpaste
+    if set -q WAYLAND_DISPLAY
+        wl-paste
+    else
+        xsel --clipboard --output $argv
+    end
+end
 
 # ssh socks5 proxy; -D port host
 function ssh-proxy; ssh -C2qTnN $argv; end
+
+# insync file manage
+function insync-manage; insync manage_selective_sync $argv; end
+
+# shortcut yay
+function yy; /usr/bin/yay $argv; end
