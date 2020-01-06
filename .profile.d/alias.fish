@@ -28,9 +28,6 @@ if type -fq gcp
         alias cp gcp
     end
 end
-function time
-	/usr/bin/env time -f "\t%e real\t%U user\t%S sys\t%P CPU\t%x status" $argv
-end
 
 function json
     /usr/bin/env python -m json.tool $argv
