@@ -24,6 +24,7 @@
 [diff]
 	compactionHeuristic = true
 	guitool = meld
+	renameLimit = 30000
 [difftool "meld"]
 	cmd = meld "$LOCAL" "$REMOTE"
 [mergetool "meld"]
