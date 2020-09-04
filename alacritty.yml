@@ -3,6 +3,8 @@ font:
   normal:
     family: NanumGothicCoding
 
+background_opacity: 0.8
+
 # Colors (Solarized Dark)
 colors:
   # Default colors
@@ -181,3 +183,5 @@ key_bindings:
   - { key: Up,        mods: Command|Alt,      action: "ToggleFullscreen"  }
   - { key: Down,      mods: Command|Alt,      action: "ToggleFullscreen"  }
   - { key: N,         mods: Command|Control,  action: "SpawnNewInstance"  }
+
+# vim: ts=2 sw=2 et
