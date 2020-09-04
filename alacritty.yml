@@ -182,6 +182,6 @@ key_bindings:
   - { key: V,         mods: Command|Shift,    action: "Paste"             }
   - { key: Up,        mods: Command|Alt,      action: "ToggleFullscreen"  }
   - { key: Down,      mods: Command|Alt,      action: "ToggleFullscreen"  }
-  - { key: N,         mods: Command|Control,  action: "SpawnNewInstance"  }
+  - { key: N,         mods: Command|Shift,    action: "SpawnNewInstance"  }
 
 # vim: ts=2 sw=2 et
