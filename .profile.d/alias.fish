@@ -38,7 +38,7 @@ if type -fq $HOME/.local/bin/hub
 end
 
 # gpg without agent
-function gpg; /usr/bin/gpg --pinentry-mode loopback $argv; end
+function gpg; /usr/local/bin/gpg --pinentry-mode loopback $argv; end
 
 # terminal locale
 function sshkr; luit -encoding eucKR +osl -- ssh $argv; end
