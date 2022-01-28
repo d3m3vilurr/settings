@@ -23,7 +23,7 @@
 	meld = "difftool -g -y -d"
 	gmerge = "mergetool -t meld -y"
 [core]
-	editor = vi
+	editor = vim
 [diff]
 	compactionHeuristic = true
 	guitool = meld
