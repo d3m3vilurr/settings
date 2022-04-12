@@ -6,6 +6,14 @@ function prepend_to_path -d "Prepend the given dir to PATH if it exists and is n
     end
 end
 
+function append_to_path
+    if test -d $argv[1]
+        if not contains $argv[1] $PATH
+            set -gx PATH $PATH "$argv[1]"
+        end
+    end
+end
+
 function prepend_to_ld_lib_path -d "Prepend the given dir to PATH if it exists and is not already in it"
     if test -d $argv[1]
         if not contains $argv[1] $LD_LIBRARY_PATH
@@ -48,3 +56,8 @@ end
 if test -d $HOME/opt/radare2/lib
     prepend_to_ld_lib_path "$HOME/opt/radare2/lib"
 end
+
+if test -d /opt/android-sdk/platform-tools
+    append_to_path /opt/android-sdk/platform-tools
+end
+

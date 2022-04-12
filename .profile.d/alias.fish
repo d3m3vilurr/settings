@@ -37,6 +37,9 @@ if type -fq $HOME/.local/bin/hub
     alias git hub
 end
 
+# gpg without agent
+function gpg; /usr/bin/gpg --pinentry-mode loopback $argv; end
+
 # terminal locale
 function sshkr; luit -encoding eucKR +osl -- ssh $argv; end
 function telnetkr; luit -encoding eucKR +osl -- telnet $argv; end
