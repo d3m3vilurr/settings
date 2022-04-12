@@ -70,5 +70,8 @@ function ssh-proxy; ssh -C2qTnN $argv; end
 # insync file manage
 function insync-manage; insync manage_selective_sync $argv; end
 
-# shortcut yay
-function yy; /usr/bin/yay $argv; end
+# only for archlinux
+if test -f /etc/arch-release
+    # shortcut yay
+    function yy; /usr/bin/yay $argv; end
+end
