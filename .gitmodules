@@ -1,33 +1,33 @@
 [submodule "dircolors-solarized"]
 	path = dircolors-solarized
-	url = git://github.com/seebi/dircolors-solarized.git
+	url = https://github.com/seebi/dircolors-solarized.git
 [submodule ".git_extend/git-flow"]
 	path = .git_extend/git-flow
-	url = git://github.com/nvie/gitflow.git
+	url = https://github.com/nvie/gitflow.git
 [submodule ".bash_completion.d/git-flow-completion"]
 	path = .bash_completion.d/git-flow-completion
-    url = git://github.com/bobthecow/git-flow-completion.git
+    url = https://github.com/bobthecow/git-flow-completion.git
 [submodule ".vim"]
 	path = .vim
-	url = git://github.com/d3m3vilurr/vimrc.git
+	url = https://github.com/d3m3vilurr/vimrc.git
 [submodule "fish/virtualfish"]
 	path = fish/virtualfish
-	url = git://github.com/adambrenecki/virtualfish.git
+	url = https://github.com/adambrenecki/virtualfish.git
 [submodule ".git_extend/git-meld"]
 	path = .git_extend/git-meld
-	url = git://github.com/wmanley/git-meld.git
+	url = https://github.com/wmanley/git-meld.git
 [submodule ".git_extend/git-hg"]
 	path = .git_extend/git-hg
-	url = git://github.com/cosmin/git-hg.git
+	url = https://github.com/cosmin/git-hg.git
 [submodule ".tmux/plugins/tpm"]
 	path = .tmux/plugins/tpm
-	url = git://github.com/tmux-plugins/tpm.git
+	url = https://github.com/tmux-plugins/tpm.git
 [submodule "guake-colors-solarized"]
 	path = guake-colors-solarized
-	url = git://github.com/coolwanglu/guake-colors-solarized
+	url = https://github.com/coolwanglu/guake-colors-solarized
 [submodule "gnome-terminal-colors-solarized"]
 	path = gnome-terminal-colors-solarized
-	url = git://github.com/Anthony25/gnome-terminal-colors-solarized
+	url = https://github.com/Anthony25/gnome-terminal-colors-solarized
 [submodule "bass"]
 	path = bass
-	url = git://github.com/edc/bass.git
+	url = https://github.com/edc/bass.git
