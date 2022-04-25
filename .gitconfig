@@ -34,3 +34,5 @@
 	user = d3m3vilurr
 [review "review.lineageos.org"]
 	username = d3m3vilurr
+[init]
+	defaultBranch = main
