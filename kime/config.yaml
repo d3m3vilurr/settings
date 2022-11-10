@@ -98,3 +98,6 @@ engine:
         - ComposeChoseongSsang
       dubeolsik:
         - TreatJongseongAsChoseong
+      sebeolsik-3-91:
+        - FlexibleComposeOrder
+
