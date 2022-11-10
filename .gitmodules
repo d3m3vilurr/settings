@@ -1,9 +1,6 @@
 [submodule "dircolors-solarized"]
 	path = dircolors-solarized
 	url = https://github.com/seebi/dircolors-solarized
-[submodule ".git_extend/git-flow"]
-	path = .git_extend/git-flow
-	url = https://github.com/nvie/gitflow
 [submodule ".bash_completion.d/git-flow-completion"]
 	path = .bash_completion.d/git-flow-completion
     url = https://github.com/bobthecow/git-flow-completion
