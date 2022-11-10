@@ -31,3 +31,6 @@
 [submodule "bass"]
 	path = bass
 	url = git://github.com/edc/bass.git
+[submodule "alacritty/alacritty-theme"]
+	path = alacritty/alacritty-theme
+	url = https://github.com/eendroroy/alacritty-theme
