@@ -11,8 +11,8 @@ i3 = i3ipc.Connection()
 i3.command('input {} events toggle enabled disabled'.format(TP_DEVICE_ID))
 
 inputs = i3.get_inputs()
-gram_touch_device = next((x for x in inputs if x['identifier'] == TP_DEVICE_ID))
-tp_disabled = gram_touch_device.get('libinput', {}).get('send_events') == 'disabled'
+gram_touch_device = next((x for x in inputs if x.identifier == TP_DEVICE_ID))
+tp_disabled = getattr(gram_touch_device, 'libinput', {}).get('send_events') == 'disabled'
 if not gram_touch_device:
     sys.exit(0)
 
