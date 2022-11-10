@@ -15,7 +15,7 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term termite
+set $term alacritty
 # Your preferred application launcher
 # Note: it's recommended that you pass the final command to sway
 #set $menu dmenu_path | bemenu | xargs swaymsg exec --
@@ -57,11 +57,18 @@ exec swayidle -w \
               resume 'swaymsg "output * dpms on"' \
          before-sleep 'swaylock-blur'
 
+exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
+exec hash dbus-update-activation-environment 2>/dev/null && \
+     dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
+exec systemctl --user import-environment XMODIFIERS GTK_IM_MODULE QT_IM_MODULE
+exec systemctl --user import-environment PATH
+
 ### autostart
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec mako --default-timeout 10000 --output eDP-1
 #exec ibus-daemon
-exec uim-toolbar-gtk
+#exec uim-toolbar-gtk
+exec kime
 exec insync start
 exec redshift -l"37.57:127.00"
 exec ~/.config/gallery-dl/change_wallpaper
