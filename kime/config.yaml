@@ -93,6 +93,7 @@ engine:
   hangul:
     layout: sebeolsik-3-91
     word_commit: false
+    preedit_johab: Always
     addons:
       all:
         - ComposeChoseongSsang
@@ -100,4 +101,3 @@ engine:
         - TreatJongseongAsChoseong
       sebeolsik-3-91:
         - FlexibleComposeOrder
-
