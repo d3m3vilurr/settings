@@ -1,0 +1,10 @@
+import = ["/home/d3m3vilurr/.config/alacritty/alacritty-theme/themes/solarized_dark.toml"]
+
+[font]
+size = 11.0
+
+[font.normal]
+family = "NanumGothicCoding"
+
+[window]
+opacity = 0.8

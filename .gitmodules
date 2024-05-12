@@ -30,4 +30,4 @@
 	url = https://github.com/edc/bass
 [submodule "alacritty/alacritty-theme"]
 	path = alacritty/alacritty-theme
-	url = https://github.com/eendroroy/alacritty-theme
+	url = https://github.com/alacritty/alacritty-theme
