@@ -17,15 +17,6 @@ warning = 20.0
 alert = 10.0
 
 [[block]]
-block = "disk_space"
-path = "/storage"
-alert_unit = "GB"
-format = " $icon SDA {$free}"
-interval = 20
-warning = 20.0
-alert = 10.0
-
-[[block]]
 block = "cpu"
 interval = 1
 format = " $icon $barchart $utilization "
@@ -41,7 +32,7 @@ format = " $icon {$mem_used}/{$mem_total}({$mem_used_percents})"
 
 [[block]]
 block = "net"
-device = "wlp0s20f3"
+device = "wlan0"
 format = " ^icon_net_wireless {$ssid|} {$bitrate|}"
 missing_format = ""
 
@@ -62,7 +53,7 @@ full_format = " $icon $percentage {$time |}"
 empty_format = " $icon $percentage {$time |}"
 charging_format = " $icon $percentage {$time |}"
 not_charging_format = " $icon $percentage {$time |}"
-device = "CMB0"
+device = "BAT0"
 
 [[block]]
 block = "time"

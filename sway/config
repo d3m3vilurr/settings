@@ -36,7 +36,7 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 #   output HDMI-A-1 resolution 1920x1080 position 1920,0
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
-
+output DSI-1 transform 90
 ### Idle configuration
 #
 # Example configuration:
@@ -65,7 +65,7 @@ exec systemctl --user import-environment PATH
 
 ### autostart
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec mako --default-timeout 10000 --output eDP-1
+exec mako --default-timeout 10000 --output DSI-1
 #exec ibus-daemon
 #exec uim-toolbar-gtk
 exec kime
@@ -115,6 +115,20 @@ input "1133:45089:Logitech_Pebble_Mouse" {
     scroll_factor 1.5
 }
 
+input "2321:21128:XXXX0000:05_0911:5288_Touchpad" {
+    dwt enabled
+    tap enabled
+    events enabled
+    pointer_accel 0.1
+}
+
+input "1046:9110:Goodix_Capacitive_TouchScreen" {
+    map_to_output DSI-1
+}
+
+input "Goodix Capacitive TouchScreen" {
+    map_to_output DSI-1
+}
 ### Key bindings
 #
 # Basics:
