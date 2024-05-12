@@ -1,9 +1,30 @@
+for uutil in /usr/bin/uu-*
+    set command (string split -m1 uu- $uutil)[2]
+    if [ $command = "test" ]
+        continue
+    end
+    if [ $command = "[" ]
+        continue
+    end
+    alias $command $uutil
+end
+
+function extends_color
+    set command $argv[1]
+    if [ (functions|grep "^$command\$"|wc -l) = 0 ]
+        alias $command "/usr/bin/env $command --color=auto"
+    else
+        functions -c $command __fish_$command
+        alias $command "__fish_$command --color=auto"
+    end
+end
+
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]
-    function ls; /usr/bin/env ls --color=auto $argv; end
-    function grep; /usr/bin/env grep --color=auto $argv; end
-    function fgrep; /usr/bin/env fgrep --color=auto $argv; end
-    function egrep; /usr/bin/env egrep --color=auto $argv; end
+    extends_color ls
+    extends_color grep
+    extends_color fgrep
+    extends_color egrep
 end
 
 # some more ls aliases
