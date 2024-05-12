@@ -68,7 +68,7 @@ function fish_prompt
     printf ' at '
 
     set_color magenta
-    printf '%s' (hostname|cut -d . -f 1)
+    printf '%s' (hostnamectl hostname|cut -d . -f 1)
     set_color normal
 
     if test $VIRTUAL_ENV
