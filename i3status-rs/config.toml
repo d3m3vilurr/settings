@@ -2,7 +2,7 @@
 theme = "solarized-dark"
 
 [icons]
-icons = "awesome4"
+icons = "emoji"
 
 [[block]]
 block = "backlight"
