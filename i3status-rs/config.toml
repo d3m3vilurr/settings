@@ -1,5 +1,8 @@
+[theme]
 theme = "solarized-dark"
-icons = "awesome"
+
+[icons]
+icons = "awesome4"
 
 [[block]]
 block = "backlight"
@@ -7,8 +10,8 @@ block = "backlight"
 [[block]]
 block = "disk_space"
 path = "/"
-alias = "NVME0"
-unit = "GiB"
+alert_unit = "GB"
+format = " $icon NVME0 {$free}"
 interval = 20
 warning = 20.0
 alert = 10.0
@@ -16,53 +19,53 @@ alert = 10.0
 [[block]]
 block = "disk_space"
 path = "/storage"
-alias = "SDA"
-unit = "GiB"
+alert_unit = "GB"
+format = " $icon SDA {$free}"
 interval = 20
 warning = 20.0
 alert = 10.0
 
 [[block]]
 block = "cpu"
-frequency = true
+interval = 1
+format = " $icon $barchart $utilization "
 
 [[block]]
 block = "temperature"
 
 [[block]]
 block = "memory"
-display_type = "memory"
-format_mem = "{Mug}GB/{MTg}GB({Mup}%)"
-clickable = false
+#display_type = "memory"
+format = " $icon {$mem_used}/{$mem_total}({$mem_used_percents})"
+#clickable = false
 
 [[block]]
 block = "net"
 device = "wlp0s20f3"
-ssid = true
-bitrate = true
-hide_inactive = true
-hide_missing = true
+format = " ^icon_net_wireless {$ssid|} {$bitrate|}"
+missing_format = ""
 
 [[block]]
 block = "net"
-device = "tinc0"
-ip = false
-speed_up = false
-speed_down = false
-graph_down = true
-hide_inactive = true
-hide_missing = true
+device = "wg0"
+format = " ^icon_net_vpn {$graph_down}"
+missing_format = ""
 
 [[block]]
 block = "sound"
 
 [[block]]
 block = "battery"
-show = "both"
+#show = "both"
+format = " $icon $percentage {$time |}"
+full_format = " $icon $percentage {$time |}"
+empty_format = " $icon $percentage {$time |}"
+charging_format = " $icon $percentage {$time |}"
+not_charging_format = " $icon $percentage {$time |}"
 device = "CMB0"
 
 [[block]]
 block = "time"
 interval = 60
-format = "%Y/%m/%d %a %R"
-on_click = "orage"
+format = " $timestamp.datetime(f:'%Y/%m/%d %a %R')"
+#command_on = "orage"
